@@ -1,0 +1,20 @@
+same resource has the same URI. when we fetch users using a get request, we are requesting a specific URI (localhost:8080/users)
+Different representations are possible as well.
+	- For the same resource, you may have different representations of the response structure. 
+		- Example, can have JSON or XML content type.
+		- or in English, french...etc It is important to be able to expose in in different formats or lanaguges.
+		- The consumer needs to be the one asking for a specific representation.
+This is where content negotiation comes in to place.
+- Example: Consumer can use "accept header", when sending a request they can send a request with a MIME type such as
+application/xml, application/json...etc
+- Accept-language header is another option, to receive the response in a specific langauge (en, fr...etc)
+
+Consumer and service provider negotiate with each other, and discuss what kind of representation of the resource they want.
+
+These are defined in the request headers.
+
+With spring boot, it's very easy. Go to pom.xml and add your dependency.
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>

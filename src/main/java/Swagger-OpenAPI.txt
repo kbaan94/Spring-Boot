@@ -1,0 +1,27 @@
+Your REST API consumers need to have a clear understanding of the following:
+	- The resources that are available in your application
+	- The request/response structure (Constraints/Validation)
+	- Actions that can be performed
+	
+REST API Documentation(irrespective of programming language being used)
+Use Swagger and Open API
+
+Swagger provides tools for documentation. Defacto standard for documenting your rest api. Open API specification was created based on Swagger spec.
+The Swagger specification became the open API specification and swagger tools are tools used to visiualize and consume your API.
+
+OpenAPI is a standard language-agnostic interface to define your rest api. Earlier called swagger specification. Helps you to discover and understand
+REST APIs.
+
+Swagger UI helps you visualize and interact with your REST API. It provides a great UI around the open API specification and enables you
+to play around with your rest api.
+
+springdoc-openapi java library helps to automate the generation of API documentation for spring boot projects.
+https://springdoc.org/
+
+<dependency>
+	<groupId>org.springdoc</groupId>
+	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+	<version>2.0.0</version>
+</dependency>
+
+Swagger UI allows you to interact with your REST API just like Talend API tester.

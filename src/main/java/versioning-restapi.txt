@@ -1,0 +1,12 @@
+After having built a REST API, and have a number of consumers making use of it. There could come a time where you would need to implement
+a new feature or change in your rest api, and you want to do this without breaking your code or forcing your consumers to adapt to a new change.
+
+You must version your REST API in this case. Keep the current version with current changes the same, and implement the new changes for the new version
+and let consumers know of the changes that will take place when updating to the latest version. This way, consumers wont have to face new changes
+and can update the version whenever they wish to.
+
+Ways to version rest api:
+	- URL: host:8080/v2/users compared to host:8080/v1/users
+	- Request parameter: v1 = version 1...etc
+	- header
+	- media type

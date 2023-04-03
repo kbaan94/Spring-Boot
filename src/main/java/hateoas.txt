@@ -1,0 +1,10 @@
+Hypermedia as the Engine of Application State
+
+Whenever you visit a website you can see the following:
+	- Data and actions you can perform
+	
+Implementation Options:
+	1. Custom format and implementation: Difficult to maintain
+	2. Use standard implementation: HAL (JSON Hypertext application language). It is a simple format that gives a consistent and easy way
+	to hyperlink between resources in your API
+	Spring HATEOAS: Generate HAL responses with hyperlinks to resources

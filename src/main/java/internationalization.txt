@@ -1,0 +1,9 @@
+Your REST API might have consumers from around the world. How do you customize it users around the world?
+thats where internationalization comes into place. We abbreviate it to "i18n"
+
+We make use a of HTTP request Header - Accept-Language to indicate natural language and locale that the consumer prefers
+en for English
+fr for French
+etc
+
+Look at the above header to send the appropriate language header.
